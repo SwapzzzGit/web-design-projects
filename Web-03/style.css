@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(./Resources/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: Cerelia;
+  src: url(./Resources/fonts/CERELIA-BF6576b4fbafeab.ttf);
+}
+@font-face {
+  font-family: Voyage;
+  src: url(./Resources/fonts/orangevoyagedemo-regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1535275492947-031e8e66eab5?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  filter: contrast(1.2) saturate(1.5) hue-rotate(-20deg);
+  background-position: center;
+  background-size: cover;
+}
+
+#main #left{
+  width: 30%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.259);
+}
+#nav{
+  padding: 50px 60px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav #rlinks{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+#nav #rlinks a{
+  color: white;
+  text-decoration: none;
+  gap: 200px;
+}
+
+#main #left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.259);
+}
+
+#left .place{
+  color: white;
+  width: 100%;
+}
+.place h6{
+  font-weight: 600;
+  opacity: .4;
+}

@@ -1,0 +1,211 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(./Resources/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: Cerelia;
+  src: url(./Resources/fonts/CERELIA-BF6576b4fbafeab.ttf);
+}
+@font-face {
+  font-family: Voyage;
+  src: url(./Resources/fonts/orangevoyagedemo-regular.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  html, body {
+      width: 100%;
+      height: 100%;
+      
+  }
+  
+  #main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: #82616d;
+  }
+  #maintext{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    user-select: none;
+    font-family: cerelia;
+    transform: translate(-50%,-50%);
+  }
+  
+  #maintext h1{
+    font-size: 9vw;
+    font-weight: 100;
+    white-space: nowrap;
+   
+  }
+  #maintext h3{
+    font-size: 4vw;
+    font-weight: 100;
+    white-space: nowrap;
+    line-height: 1;  
+  }
+
+  #nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: white;
+      gap: 100px;
+      padding: 50px 60px;
+  }
+  
+  #nav h3 {
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 14px; 
+  }
+  
+  #nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 10px;
+  }
+  
+  #left {
+      position: relative;
+      width: 45%;
+      height: 100%;
+      overflow: hidden;
+  }
+#scroll{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: -1%;
+    left: 10%;
+    transform-origin: 0% 50%;
+   transform: rotate(-90deg);
+}
+  #scroll #line{
+    width: 150px;
+    height: 1.6px;
+    background-color: white;
+    
+  }
+ #scroll  h4{
+    font-size: 10px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: white;
+    
+  }
+  #centerimg {
+      position: absolute;
+      width: 50%;
+      height: 60%;
+      top: 50%;
+      left: 50%;
+      background-size: cover;
+      background-image: url(https://images.unsplash.com/photo-1614197395332-b9626d81a72f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-position: center;
+      transform: translate(-50%, -50%);
+  }
+
+  #text{
+    display: flex;
+    color: white;
+  }
+
+  #centerimg #text{
+    position: absolute;
+    width: 100%;
+    bottom: -30%;
+  }
+
+  #text #parts{
+    width: 30%;
+  }
+  #text h5{
+    margin-bottom: 20px;
+  }
+  #text #para{
+    width: 70%;
+  }
+#text p{
+    font-size: 12px;
+}
+  #center {
+    position: relative;
+      width: 50%;
+      height: 100%;
+      background-image: url(https://images.unsplash.com/photo-1614197395332-b9626d81a72f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size:cover ;
+      background-position: center;
+  }
+  #card{
+    position: absolute;
+    display: flex;
+    width:300px;
+    height:200px;
+    right: -4%;
+    bottom: 5%;
+    background-color: darkslateblue;
+  }
+  
+ #cicons{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:25%;
+    height:100%;
+    background-color: white;
+ }
+
+ #cicons i {
+  font-size: 20px; 
+  font-weight: bold; 
+}
+
+ #cimage{
+    width:75%;
+    height:100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1668051041600-cd2abfec90c5?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:cover ;
+    background-position: center;
+  }
+  #right {
+      width: 5%;
+      height: 100%;
+      overflow: hidden;
+  }
+  #relem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:70%;
+  }
+  #relem i{
+    padding: 40px 60px;
+  }
+  #relem #rlinks{
+    display: flex;
+    gap: 20px;
+    z-index: 999;
+    transform: translateY(-150px) rotate(90deg);
+  }
+  #relem #rlinks a{
+    color: #fff;
+    text-decoration: none;
+  }
+  #relem{
+    color: white;
+    padding: 10px;
+  }

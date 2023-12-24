@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Resources/fonts/Gilroy-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: Cerelia;
+    src: url(./Resources/fonts/CERELIA-BF6576b4fbafeab.ttf);
+  }
+  @font-face {
+    font-family: Voyage;
+    src: url(./Resources/fonts/orangevoyagedemo-regular.otf);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+    width:100%;
+    height:100%;
+    display: flex;
+    background-color: aquamarine;
+}
+
+#left{
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    color: white;
+}
+
+#left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .2; 
+  }
+
+#left h1{
+    font-size: 22px;
+}
+
+#left i{
+    font-size: 20px;
+}
+
+#right{
+    position: relative;
+    width:50%;
+    height:100%;
+    background-color: gold;
+}
+
+#img1{
+    position: absolute;
+    width: 150px;;
+    height:150px;
+}
+
+#img2{
+    position: absolute;
+    width: 150px;;
+    height:150px;
+}
+
+#img3{
+    position: absolute;
+    width: 150px;;
+    height:150px;
+}
